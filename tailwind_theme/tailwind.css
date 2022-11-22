@@ -1549,6 +1549,10 @@ input[type="range"]::-ms-fill-lower {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1595,6 +1599,10 @@ input[type="range"]::-ms-fill-lower {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .-space-x-4 > :not([hidden]) ~ :not([hidden]) {
@@ -2974,6 +2982,10 @@ input[type="range"]::-ms-fill-lower {
 
 .outline-blue-500 {
   outline-color: #3b82f6;
+}
+
+.outline-slate-200 {
+  outline-color: #e2e8f0;
 }
 
 .ring-2 {
