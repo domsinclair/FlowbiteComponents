@@ -1,0 +1,14 @@
+
+/* Pinegrow generated Design Panel Init Begin */
+
+    /* Pinegrow generated Design Panel Init End */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Pinegrow generated Design Panel Extra Rules Begin */
+body, html {
+    min-height: 100vh;
+}
+
+    /* Pinegrow generated Design Panel Extra Rules End */
