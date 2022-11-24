@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="tailwind_theme/tailwind.css" rel="stylesheet" type="text/css" />
+    <title>Flowbite Progress</title>
+  </head>
+  <body>
+    <header>
+      <div
+        class="flex items-center w-full px-10 mx-auto bg-white dark:bg-gray-900"
+      >
+        <h1 class="text-3xl text-gray-900 dark:text-white">
+          Flowbite Components
+        </h1>
+      </div>
+    </header>
+    <section
+      class="flex flex-col items-center w-full px-5 mx-auto bg-gray-100 dark:bg-gray-900"
+    >
+      <div class="flex flex-col items-center gap-3 mb-2">
+        <h2 class="text-3xl text-gray-900 dark:text-white">Progress</h2>
+        <h3 class="text-2xl text-gray-900 dark:text-white">
+          Default progress bar
+        </h3>
+      </div>
+
+      <div
+        class="flowbite w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+      >
+        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+      </div>
+
+      <div class="flex flex-col items-center gap-1 my-10">
+        <h3 class="text-2xl text-gray-900 dark:text-white">Sizes</h3>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <div class="flowbite">
+          <div class="mb-1 text-base font-medium dark:text-white">Small</div>
+          <div
+            class="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700"
+          >
+            <div
+              class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500"
+              style="width: 45%"
+            ></div>
+          </div>
+        </div>
+
+        <div class="flowbite">
+          <div class="mb-1 text-base font-medium dark:text-white">Default</div>
+          <div
+            class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700"
+          >
+            <div
+              class="bg-blue-600 h-2.5 rounded-full dark:bg-blue-500"
+              style="width: 45%"
+            ></div>
+          </div>
+        </div>
+
+        <div class="flowbite">
+          <div class="mb-1 text-lg font-medium dark:text-white">Large</div>
+          <div
+            class="w-full h-4 mb-4 bg-gray-200 rounded-full dark:bg-gray-700"
+          >
+            <div
+              class="h-4 bg-blue-600 rounded-full dark:bg-blue-500"
+              style="width: 45%"
+            ></div>
+          </div>
+        </div>
+
+        <div class="flowbite">
+          <div class="mb-1 text-lg font-medium dark:text-white">
+            Extra Large
+          </div>
+          <div class="w-full h-6 bg-gray-200 rounded-full dark:bg-gray-700">
+            <div
+              class="h-6 bg-blue-600 rounded-full dark:bg-blue-500"
+              style="width: 45%"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center gap-1 my-10">
+        <h3 class="text-2xl text-gray-900 dark:text-white">
+          With label inside
+        </h3>
+      </div>
+
+      <div class="w-full bg-gray-200 rounded-full flowbite dark:bg-gray-700">
+        <div
+          class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+          style="width: 45%"
+        >
+          45%
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center gap-1 my-10">
+        <h3 class="text-2xl text-gray-900 dark:text-white">
+          With label outside
+        </h3>
+      </div>
+
+      <div class="flowbite">
+        <div class="flex justify-between mb-1">
+          <span class="text-base font-medium text-blue-700 dark:text-white"
+            >Flowbite</span
+          >
+          <span class="text-sm font-medium text-blue-700 dark:text-white"
+            >45%</span
+          >
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+          <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center gap-1 my-10">
+        <h3 class="text-2xl text-gray-900 dark:text-white">Colours</h3>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <div class="flowbite">
+          <div class="mb-1 text-base font-medium dark:text-white">Dark</div>
+          <div
+            class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700"
+          >
+            <div
+              class="bg-gray-600 h-2.5 rounded-full dark:bg-gray-300"
+              style="width: 45%"
+            ></div>
+          </div>
+        </div>
+        <div class="flowbite">
+          <div
+            class="mb-1 text-base font-medium text-blue-700 dark:text-blue-500"
+          >
+            Blue
+          </div>
+          <div
+            class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700"
+          >
+            <div
+              class="bg-blue-600 h-2.5 rounded-full"
+              style="width: 45%"
+            ></div>
+          </div>
+        </div>
+        <div class="flowbite">
+          <div
+            class="mb-1 text-base font-medium text-red-700 dark:text-red-500"
+          >
+            Red
+          </div>
+          <div
+            class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700"
+          >
+            <div
+              class="bg-red-600 h-2.5 rounded-full dark:bg-red-500"
+              style="width: 45%"
+            ></div>
+          </div>
+        </div>
+        <div class="flowbite">
+          <div
+            class="mb-1 text-base font-medium text-green-700 dark:text-green-500"
+          >
+            Green
+          </div>
+          <div
+            class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700"
+          >
+            <div
+              class="bg-green-600 h-2.5 rounded-full dark:bg-green-500"
+              style="width: 45%"
+            ></div>
+          </div>
+        </div>
+        <div class="flowbite">
+          <div
+            class="mb-1 text-base font-medium text-yellow-700 dark:text-yellow-500"
+          >
+            Yellow
+          </div>
+          <div
+            class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700"
+          >
+            <div
+              class="bg-yellow-400 h-2.5 rounded-full"
+              style="width: 45%"
+            ></div>
+          </div>
+        </div>
+        <div class="flowbite">
+          <div
+            class="mb-1 text-base font-medium text-indigo-700 dark:text-indigo-500"
+          >
+            Indigo
+          </div>
+          <div
+            class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700"
+          >
+            <div
+              class="bg-indigo-600 h-2.5 rounded-full dark:bg-indigo-500"
+              style="width: 45%"
+            ></div>
+          </div>
+        </div>
+        <div class="flowbite">
+          <div
+            class="mb-1 text-base font-medium text-purple-700 dark:text-purple-500"
+          >
+            Purple
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+            <div
+              class="bg-purple-600 h-2.5 rounded-full dark:bg-purple-500"
+              style="width: 45%"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+
+<!--<div class="flex flex-col gap-3"></div>
+<script src="./node_modules/flowbite/dist/flowbite.js"></script> -->
