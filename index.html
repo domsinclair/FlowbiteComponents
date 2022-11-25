@@ -7,15 +7,279 @@
     <link href="tailwind_theme/tailwind.css" rel="stylesheet" type="text/css" />
     <title>Document</title>
   </head>
-  <body>
+  <body class="min-h-full">
     <header>
-      <div
+      <nav
+        class="px-2 bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700"
+      >
+        <div
+          class="container flex flex-wrap items-center justify-between mx-auto"
+        >
+          <a href="#" class="flex items-center">
+            <img
+              src="https://flowbite.com/docs/images/logo.svg"
+              class="h-6 mr-3 sm:h-10"
+              alt="Flowbite Logo"
+            />
+            <span
+              class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+              >Flowbite</span
+            >
+          </a>
+          <button
+            data-collapse-toggle="navbar-dropdown"
+            type="button"
+            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-dropdown"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+            <ul
+              class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <button
+                  id="dropdownNavbarLink"
+                  data-dropdown-toggle="dropdownNavbar"
+                  class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                >
+                  Components
+                  <svg
+                    class="w-5 h-5 ml-1"
+                    aria-hidden="true"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdownNavbar"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                >
+                  <ul
+                    class="py-1 text-sm text-gray-700 dark:text-gray-400"
+                    aria-labelledby="dropdownLargeButton"
+                  >
+                    <li>
+                      <a
+                        href="./Accordions.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Accordions</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./Alerts.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Alerts</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./avatar.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Avatars</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./badge.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Badges</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./breadcrumb.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Breadcrumbs</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./buttons.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Buttons</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./buttongroup.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Button Groups</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./card.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Cards</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./carousel.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Carousels</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./dropdowns.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Dropdowns</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./footer.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Footers</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./forms.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Forms</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./lists.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >List Groups</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./megamenu.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Mega Menus</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./modal.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Modals</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./navbar.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Navbars</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./pagination.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Pagination</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./progress.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Progress</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./rating.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Ratings</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./sidebar.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Sidebars</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./skeleton.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Skeletons</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./tabs.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Tabs</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./timeline.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Timelines</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./toast.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Toasts</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./tooltip.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Tooltips</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li>
+                <a
+                  href="./index.html"
+                  class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Home</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--  <div
         class="flex items-center w-full px-10 mx-auto bg-white dark:bg-gray-900"
       >
         <h1 class="text-3xl text-gray-900 dark:text-white">
           Flowbite Components
         </h1>
-      </div>
+      </div>-->
     </header>
     <section
       class="flex flex-col items-center gap-5 py-10 bg-gray-100 dark:bg-gray-900"
@@ -27,9 +291,9 @@
           <a href="./Alerts.html">Alerts</a>
         </li>
       </ul> -->
-      <div class="flex flex-row gap-4">
+      <!--  <div class="flex flex-row gap-4">
         <button
-          class="px-4 py-2 text-sm font-semibold bg-white border rounded-full shadow-sm text-slate-700 border-slate-300 outline outline-offset-2 outline-blue-500 dark:bg-slate-700 dark:text-slate-200 dark:border-transparent"
+          class="px-4 py-2 text-sm font-semibold bg-white border rounded-full shadow-sm border- text-slate-700 border-slate-300 outline outline-offset-2 outline-blue-500 dark:bg-slate-700 dark:text-slate-200 dark:border-transparent"
         >
           <a href="./Alerts.html">Alerts</a>
         </button>
@@ -171,6 +435,19 @@
           <a href="./spinner.html">Spinner</a>
         </button>
       </div>
+      <div class="flex flex-row gap-4">
+        <button
+          class="px-4 py-2 text-sm font-semibold bg-white border rounded-full shadow-sm text-slate-700 border-slate-300 outline outline-2 outline-offset-2 outline-blue-500 dark:bg-slate-700 dark:text-slate-200 dark:border-transparent"
+        >
+          <a href="./toast.html">Toast</a>
+        </button>
+        <button
+          class="px-4 py-2 text-sm font-semibold bg-white border rounded-full shadow-sm text-slate-700 border-slate-300 outline outline-2 outline-offset-2 outline-blue-500 dark:bg-slate-700 dark:text-slate-200 dark:border-transparent"
+        >
+          <a href="./tooltip.html">Tooltips</a>
+        </button>
+      </div>-->
     </section>
+    <script src="./node_modules/flowbite/dist/flowbite.js"></script>
   </body>
 </html>

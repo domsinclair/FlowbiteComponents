@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="tailwind_theme/tailwind.css" rel="stylesheet" type="text/css" />
+    <title>Flowbite Accordions</title>
+  </head>
+  <body>
+    <header>
+      <div
+        class="flex items-center w-full px-10 mx-auto bg-white dark:bg-gray-900"
+      >
+        <h1 class="text-3xl text-gray-900 dark:text-white">
+          Flowbite Components
+        </h1>
+      </div>
+    </header>
+    <section
+      class="flex flex-col items-center w-full px-5 mx-auto bg-gray-100 dark:bg-gray-900"
+    >
+      <div class="flex flex-col items-center gap-3 mb-2">
+        <h2 class="text-3xl text-gray-900 dark:text-white">Alerts</h2>
+        <h3 class="text-2xl text-gray-900 dark:text-white">Default tooltip</h3>
+      </div>
+      <div class="flowbite">
+        <button
+          data-tooltip-target="tooltip-default"
+          type="button"
+          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        >
+          Default tooltip
+        </button>
+        <div
+          id="tooltip-default"
+          role="tooltip"
+          class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+        >
+          Tooltip content
+          <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center gap-1 my-10">
+        <h3 class="text-2xl text-gray-900 dark:text-white">Tooltip styles</h3>
+      </div>
+      <div class="flex flex-col gap-3">
+        <div class="flowbite">
+          <!-- Light style tooltip -->
+          <button
+            data-tooltip-target="tooltip-light"
+            data-tooltip-style="light"
+            type="button"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Light tooltip
+          </button>
+          <div
+            id="tooltip-light"
+            role="tooltip"
+            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 tooltip"
+          >
+            Tooltip content
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+        </div>
+        <div class="flowbite">
+          <!-- Dark style tooltip -->
+          <button
+            data-tooltip-target="tooltip-dark"
+            type="button"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Dark tooltip
+          </button>
+          <div
+            id="tooltip-dark"
+            role="tooltip"
+            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+          >
+            Tooltip content
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col items-center gap-1 my-10">
+        <h3 class="text-2xl text-gray-900 dark:text-white">Placement</h3>
+      </div>
+      <div class="flex flex-col gap-3">
+        <div class="flowbite">
+          <!-- Show tooltip on top -->
+          <button
+            data-tooltip-target="tooltip-top"
+            data-tooltip-placement="top"
+            type="button"
+            class="mb-2 md:mb-0 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Tooltip top
+          </button>
+          <div
+            id="tooltip-top"
+            role="tooltip"
+            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+          >
+            Tooltip on top
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+        </div>
+        <div class="flowbite">
+          <!-- Show tooltip on right -->
+          <button
+            data-tooltip-target="tooltip-right"
+            data-tooltip-placement="right"
+            type="button"
+            class="mb-2 md:mb-0 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Tooltip right
+          </button>
+          <div
+            id="tooltip-right"
+            role="tooltip"
+            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+          >
+            Tooltip on right
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+        </div>
+        <div class="flowbite">
+          <!-- Show tooltip on bottom -->
+          <button
+            data-tooltip-target="tooltip-bottom"
+            data-tooltip-placement="bottom"
+            type="button"
+            class="mb-2 md:mb-0 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Tooltip bottom
+          </button>
+          <div
+            id="tooltip-bottom"
+            role="tooltip"
+            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+          >
+            Tooltip on bottom
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+        </div>
+        <div class="flowbite">
+          <!-- Show tooltip on left -->
+          <button
+            data-tooltip-target="tooltip-left"
+            data-tooltip-placement="left"
+            type="button"
+            class="mb-2 md:mb-0 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Tooltip left
+          </button>
+          <div
+            id="tooltip-left"
+            role="tooltip"
+            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+          >
+            Tooltip on left
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col items-center gap-1 my-10">
+        <h3 class="text-2xl text-gray-900 dark:text-white">Triggering</h3>
+      </div>
+      <div class="flex flex-col gap-3">
+        <div class="flowbite">
+          <!-- Show tooltip on hover -->
+          <button
+            data-tooltip-target="tooltip-hover"
+            data-tooltip-trigger="hover"
+            type="button"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Tooltip hover
+          </button>
+          <div
+            id="tooltip-hover"
+            role="tooltip"
+            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+          >
+            Tooltip content
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+        </div>
+        <div class="flowbite">
+          <!-- Show tooltip on click -->
+          <button
+            data-tooltip-target="tooltip-click"
+            data-tooltip-trigger="click"
+            type="button"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Tooltip click
+          </button>
+          <div
+            id="tooltip-click"
+            role="tooltip"
+            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+          >
+            Tooltip content
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col items-center gap-1 my-10">
+        <h3 class="text-2xl text-gray-900 dark:text-white">Animation</h3>
+      </div>
+      <div class="flowbite">
+        <button
+          data-tooltip-target="tooltip-animation"
+          type="button"
+          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        >
+          Animated tooltip
+        </button>
+        <div
+          id="tooltip-animation"
+          role="tooltip"
+          class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+        >
+          Tooltip content
+          <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+      </div>
+      <div class="flex flex-col items-center gap-1 my-10">
+        <h3 class="text-2xl text-gray-900 dark:text-white">Disable Arrow</h3>
+      </div>
+      <div class="flowbite">
+        <button
+          data-tooltip-target="tooltip-no-arrow"
+          type="button"
+          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        >
+          Default tooltip
+        </button>
+        <div
+          id="tooltip-no-arrow"
+          role="tooltip"
+          class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+        >
+          Tooltip content
+        </div>
+      </div>
+    </section>
+    <script src="./node_modules/flowbite/dist/flowbite.js"></script>
+  </body>
+</html>
+
+<!--<div class="flex flex-col gap-3"></div>
+<script src="./node_modules/flowbite/dist/flowbite.js"></script> -->
